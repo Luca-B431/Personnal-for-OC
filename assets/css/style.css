@@ -7,11 +7,15 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
 }
 
-var {
+:root {
   --color-white: #fff;
   --color-black: #000;
-  --color-main: #6d5a28;
+  --color-main: #a55b44;
   --color-soft: #ded2b1;
 }
