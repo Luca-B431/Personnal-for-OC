@@ -4,6 +4,24 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: Chiralla;
+  src: url("assets/fonts/Chiralla.ttf");
+}
+
+@font-face {
+  font-family: NewYork;
+  src: url("assets/fonts/NewYork.ttf");
+}
+
+.chiralla {
+  font-family: "chiralla";
+}
+
+.newyork {
+  font-family: "NewYork";
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -18,4 +36,19 @@ body {
   --color-black: #000;
   --color-main: #a55b44;
   --color-soft: #ded2b1;
+}
+
+/* fix font size  */
+
+.font50 {
+  font-size: 3rem;
+}
+.font100 {
+  font-size: 6rem;
+}
+.font200 {
+  font-size: 12rem;
+}
+.font300 {
+  font-size: 18rem;
 }

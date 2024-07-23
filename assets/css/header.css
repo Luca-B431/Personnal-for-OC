@@ -21,6 +21,9 @@ header {
     color: var(--color-main);
     padding: 10px;
     border-radius: 5px;
+    font-family: "NewYork";
+    font-weight: 500;
+    font-size: larger;
 
     &:hover {
       border: 1px rgba(128, 128, 128, 0.133) solid;

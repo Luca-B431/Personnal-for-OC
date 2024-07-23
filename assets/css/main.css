@@ -1,2 +1,28 @@
+main {
+}
 
+.first_container {
+  /* backgroung image */
+  background-image: url("../pictures/PortfolioAL/ManonstudioBdx1.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  /* !!! */
+  padding: 3rem;
+}
 
+.second_container {
+  padding: 3rem;
+}
+
+.texticon_container1 {
+  width: 20%;
+  position: relative;
+
+  left: 80%;
+}
+
+.title {
+  color: var(--color-soft);
+  margin: 0;
+}
