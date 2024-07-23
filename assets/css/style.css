@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+var {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-main: #6d5a28;
+  --color-soft: #ded2b1;
+}
