@@ -1,12 +1,16 @@
 header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   position: sticky;
   padding: 3rem;
-  width: 100%;
   font-size: larger;
   box-shadow: rgba(255, 255, 255, 0.073) 0px 19px 38px,
     rgba(255, 255, 255, 0.087) 0px 15px 12px;
+
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    align-items: center;
+  }
 }
 
 .hdr_tab_container {
@@ -14,27 +18,42 @@ header {
   justify-content: space-evenly;
   align-items: center;
   font-size: larger;
-  width: 40%;
-  gap: 1rem;
+  gap: 7rem;
 
   a {
     text-decoration: none;
     color: var(--color-main);
     padding: 10px;
-    border-radius: 5px;
-    font-family: "NewYork";
-    font-weight: 500;
-    font-size: larger;
+
+    &:last-child {
+      background-color: var(--color-soft);
+      color: var(--color-main);
+      padding: 10px 20px 10px 20px;
+      border-radius: 5px 5px 0 0;
+    }
 
     &:hover {
-      border: 1px rgba(249, 83, 0, 0.442) solid;
-      box-shadow: rgba(217, 91, 1, 0.283) 0px 1px 3px,
-        rgba(0, 0, 0, 0.24) 0px 1px 2px;
+      border-bottom: 3px rgba(77, 35, 14, 0.652) solid;
     }
 
     &:active {
-      border: 1px rgba(121, 61, 21, 0.485) solid;
+      border-bottom: 1px rgba(121, 61, 21, 0.485) solid;
     }
+
+    @media screen and (min-width: 320px) and (max-width: 425px) {
+      font-size: medium;
+    }
+    @media screen and (min-width: 426px) and (max-width: 769px) {
+      font-size: large;
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+  @media screen and (min-width: 426px) and (max-width: 769px) {
+    gap: 6rem;
   }
 }
 
@@ -45,5 +64,10 @@ header {
 
   &:hover {
     transform: rotateY(180deg);
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    height: 25%;
+    width: 25%;
   }
 }

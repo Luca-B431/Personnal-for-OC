@@ -1,14 +1,85 @@
-#first_container {
-  /* backgroung image */
-  background-image: url("../pictures/PortfolioAL/ManonstudioBdx1.jpg");
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  /* !!! */
-  padding: 3rem;
+main {
+  width: 100%;
+  margin: 0;
+
+  img {
+    width: 100%;
+  }
 }
 
+/* first container block  */
+
+#first_container {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+
+  h1 {
+    @media screen and (min-width: 320px) and (max-width: 769px) {
+      font-size: 1rem;
+    }
+  }
+  h2 {
+    @media screen and (min-width: 320px) and (max-width: 769px) {
+      font-size: 1.5rem;
+      position: relative;
+      left: 10px;
+    }
+  }
+  p {
+    @media screen and (min-width: 320px) and (max-width: 769px) {
+      font-size: 3%;
+    }
+  }
+  span {
+    @media screen and (min-width: 425px) and (max-width: 769px) {
+      position: relative;
+      bottom: 30px;
+      font-size: 2rem;
+    }
+    @media screen and (min-width: 320px) and (max-width: 424px) {
+      position: relative;
+      bottom: 80px;
+      font-size: 2rem;
+    }
+  }
+}
+
+#background_photo {
+  position: absolute;
+  z-index: -1000;
+  width: 100%;
+}
+
+#photo2 {
+  width: 100%;
+}
+
+.content_container {
+  padding: 2rem 0 0 2rem;
+}
+
+.texticon_container1 {
+  width: 20%;
+  left: 80%;
+  position: relative;
+
+  @media screen and (min-width: 425px) and (max-width: 769px) {
+    width: 30%;
+    left: 68%;
+    bottom: 30px;
+  }
+  @media screen and (min-width: 320px) and (max-width: 424px) {
+    width: 30%;
+    left: 68%;
+    bottom: 50px;
+  }
+}
+
+/* second container block */
+
 #second_container {
+  width: 100%;
   color: var(--color-main);
   display: flex;
   padding: 3rem;
@@ -18,18 +89,30 @@
     height: 10%;
     width: 30%;
   }
-}
 
-.texticon_container1 {
-  width: 20%;
-  position: relative;
-  left: 80%;
+  h3 {
+    @media screen and (min-width: 320px) and (max-width: 425px) {
+      font-size: small;
+    }
+  }
 }
 
 .texticon_container2 {
   width: 20%;
   right: 80%;
+  position: relative;
 }
+
+/* adjust svg */
+
+.responsivesvg {
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    height: 1rem;
+    width: 1rem;
+  }
+}
+
+/* specific utility class */
 
 .title {
   color: var(--color-soft);

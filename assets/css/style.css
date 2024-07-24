@@ -6,6 +6,21 @@
   padding: 0;
 }
 
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+:root {
+  --color-soft: #ded2b1;
+  --color-main: #a55b44;
+}
+
+/* fonts attributions */
+
 @font-face {
   font-family: Chiralla;
   src: url("assets/fonts/Chiralla.ttf");
@@ -16,6 +31,11 @@
   src: url("assets/fonts/NewYork.ttf");
 }
 
+@font-face {
+  font-family: Felgine;
+  src: url("assets/fonts/Felgine.ttf");
+}
+
 .chiralla {
   font-family: "chiralla";
 }
@@ -24,20 +44,17 @@
   font-family: "NewYork";
 }
 
-body {
-  font-family: "Arimo", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 450;
-  font-style: normal;
-}
-
-:root {
-  --color-soft: #ded2b1;
-  --color-main: #a55b44;
+.felgine {
+  font-family: "Felgine";
 }
 
 /* fix font size  */
-
+.font16 {
+  font-size: 1rem;
+}
+.font32 {
+  font-size: 2rem;
+}
 .font50 {
   font-size: 3rem;
 }
