@@ -14,7 +14,8 @@ header {
   justify-content: space-evenly;
   align-items: center;
   font-size: larger;
-  width: 25%;
+  width: 40%;
+  gap: 1rem;
 
   a {
     text-decoration: none;
@@ -26,8 +27,8 @@ header {
     font-size: larger;
 
     &:hover {
-      border: 1px rgba(128, 128, 128, 0.133) solid;
-      box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+      border: 1px rgba(249, 83, 0, 0.442) solid;
+      box-shadow: rgba(217, 91, 1, 0.283) 0px 1px 3px,
         rgba(0, 0, 0, 0.24) 0px 1px 2px;
     }
 

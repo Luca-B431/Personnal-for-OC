@@ -1,7 +1,4 @@
-main {
-}
-
-.first_container {
+#first_container {
   /* backgroung image */
   background-image: url("../pictures/PortfolioAL/ManonstudioBdx1.jpg");
   background-size: cover;
@@ -11,15 +8,27 @@ main {
   padding: 3rem;
 }
 
-.second_container {
+#second_container {
+  color: var(--color-main);
+  display: flex;
   padding: 3rem;
+  gap: 3rem;
+
+  img {
+    height: 10%;
+    width: 30%;
+  }
 }
 
 .texticon_container1 {
   width: 20%;
   position: relative;
-
   left: 80%;
+}
+
+.texticon_container2 {
+  width: 20%;
+  right: 80%;
 }
 
 .title {
