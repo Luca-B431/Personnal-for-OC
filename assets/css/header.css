@@ -24,6 +24,7 @@ header {
     text-decoration: none;
     color: var(--color-main);
     padding: 10px;
+    border-bottom: 3px solid transparent;
 
     &:last-child {
       padding: 10px 20px 10px 20px;

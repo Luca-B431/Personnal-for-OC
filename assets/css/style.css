@@ -23,17 +23,17 @@ body {
 
 @font-face {
   font-family: Chiralla;
-  src: url("assets/fonts/Chiralla.ttf");
+  src: local("Chiralla") url("assets/fonts/Chiralla.ttf");
 }
 
 @font-face {
   font-family: NewYork;
-  src: url("assets/fonts/NewYork.ttf");
+  src: local("NewYork") url("assets/fonts/NewYork.ttf");
 }
 
 @font-face {
   font-family: Felgine;
-  src: url("assets/fonts/Felgine.ttf");
+  src: local("Felgine") url("assets/fonts/Felgine.ttf");
 }
 
 .chiralla {
