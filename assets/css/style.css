@@ -36,8 +36,17 @@ body {
   src: local("Felgine") url("assets/fonts/Felgine.ttf");
 }
 
+@font-face {
+  font-family: Orsay;
+  src: local("Orsay") url("assets/fonts/Orsay.otf");
+}
+
+.orsay {
+  font-family: "Orsay";
+}
+
 .chiralla {
-  font-family: "chiralla";
+  font-family: "Chiralla";
 }
 
 .newyork {

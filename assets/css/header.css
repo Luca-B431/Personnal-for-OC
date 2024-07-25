@@ -61,9 +61,10 @@ header {
 }
 
 .logo {
-  height: 100px;
-  width: 100px;
+  height: 9vw;
+  width: 9vw;
   transition: all 2s;
+  align-self: center;
 
   &:hover {
     transform: rotateY(180deg);
