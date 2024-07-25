@@ -26,10 +26,12 @@ header {
     padding: 10px;
 
     &:last-child {
-      background-color: var(--color-soft);
-      color: var(--color-main);
       padding: 10px 20px 10px 20px;
-      border-radius: 5px 5px 0 0;
+      &:hover {
+        background-color: var(--color-soft);
+        color: var(--color-main);
+        border-radius: 5px 5px 0 0;
+      }
     }
 
     &:hover {
@@ -48,12 +50,12 @@ header {
     }
   }
 
-  @media screen and (min-width: 320px) and (max-width: 425px) {
+  @media screen and (min-width: 320px) and (max-width: 899.99px) {
     flex-direction: column-reverse;
     gap: 0;
   }
-  @media screen and (min-width: 426px) and (max-width: 769px) {
-    gap: 6rem;
+  @media screen and (min-width: 900px) and (max-width: 1240px) {
+    gap: 20px;
   }
 }
 
