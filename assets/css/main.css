@@ -10,43 +10,70 @@ main {
 /* first container block  */
 
 #first_container {
-  width: 100%;
+  display: inline-block;
   position: relative;
-  z-index: 2;
+  z-index: 1;
+  width: 100%;
+  max-height: 100%;
 
   h1 {
+    padding-left: 1vw;
+    font-size: 6vw;
   }
   h2 {
+    padding-left: 2vw;
+    font-size: 8vw;
   }
   p {
+    font-size: 1vw;
   }
   span {
+    padding-left: 3vw;
+    font-size: 12vw;
   }
+}
+
+#first-container img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
 }
 
 #background_photo {
   position: absolute;
-  z-index: 1;
+  height: auto;
+  z-index: -1;
   width: 100%;
 }
 
-.content_container {
-  padding: 2rem 0 0 2rem;
-}
+.text_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1vh;
+  width: 100%;
+  padding: 5px;
+  max-height: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 1vw 0;
 
-.texticon_container1 {
-  width: 20%;
-  left: 80%;
-  position: relative;
+  .texticon {
+    padding-right: 2vw;
+    width: 30%;
+    align-self: flex-end;
+  }
 }
-
 /* second container block */
 
 #second_container {
+  display: flex;
+  justify-content: center;
   width: 100%;
   color: var(--color-main);
   display: flex;
-  padding: 3rem;
+  padding: 2vw;
   gap: 3rem;
 
   h3 {
@@ -56,19 +83,36 @@ main {
   }
 }
 
-#photo2 {
-  width: 100%;
-}
+.text_container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-.texticon_container2 {
-  width: 20%;
-  right: 80%;
-  position: relative;
+  h3 {
+    font-size: 6vw;
+  }
+
+  p {
+    font-size: 1.8vw;
+  }
+
+  span {
+    font-size: 8vw;
+    align-self: end;
+  }
 }
 
 /* adjust svg */
 
 .responsivesvg {
+  @media screen and (min-width: 0px) and (max-width: 425px) {
+    width: 10%;
+    height: 10%;
+  }
+  @media screen and (min-width: 425.01px) and (max-width: 1024px) {
+    width: 20%;
+    height: 20%;
+  }
 }
 
 /* specific utility class */
