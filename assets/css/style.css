@@ -57,22 +57,14 @@ body {
   font-family: "Felgine";
 }
 
-/* fix font size  */
-.font16 {
-  font-size: 1rem;
+/* specific utility class */
+
+.title {
+  color: var(--color-soft);
+  margin: 0;
 }
-.font32 {
-  font-size: 2rem;
-}
-.font50 {
-  font-size: 3rem;
-}
-.font100 {
-  font-size: 6rem;
-}
-.font200 {
-  font-size: 12rem;
-}
-.font300 {
-  font-size: 18rem;
+
+.flexspace {
+  display: flex;
+  justify-content: space-between;
 }
