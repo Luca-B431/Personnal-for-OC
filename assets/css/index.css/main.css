@@ -10,7 +10,6 @@ main {
   position: relative;
   z-index: 1;
   width: 100%;
-  max-height: 110vw;
 
   h1 {
     padding-left: 2vw;
@@ -134,8 +133,8 @@ main {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 50px; /* Longueur de la bordure */
-  height: 50px; /* Largeur de la bordure */
+  width: 50px;
+  height: 50px;
   border-bottom: 0.5vw double var(--color-main);
   border-right: 0.5vw double var(--color-main);
 }
@@ -185,6 +184,10 @@ main {
     align-self: flex-end;
     font-size: 8vw;
   }
+}
+
+#heart:hover path {
+  fill: #a55b44;
 }
 
 #photo3 {

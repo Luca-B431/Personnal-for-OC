@@ -1,0 +1,32 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3vw 3vw;
+  border-top: 1px solid transparent;
+
+  img {
+    width: 9vw;
+    height: 9vw;
+    align-self: center;
+  }
+}
+
+footer:hover {
+  border-top: 1px solid var(--color-soft);
+}
+
+.ftr_icon_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a svg {
+    height: 3vw;
+    width: 6.1vw;
+  }
+
+  a:hover {
+    opacity: 0.5;
+    height: 4vw;
+  }
+}

@@ -1,0 +1,111 @@
+main {
+  width: 100%;
+  margin: 0;
+}
+
+/* wedding part  */
+
+#first_container {
+  width: 100%;
+  height: 100%;
+
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+#background_photo {
+  transform: translateY(-25%);
+  margin-bottom: -15%;
+  width: 100%;
+}
+
+.wedding_container {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.text_container1 {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+/* pregnancy part */
+
+#second_container {
+  width: 100%;
+  height: 100%;
+
+  h2 {
+    font-size: 4rem;
+  }
+}
+
+#background_photo2 {
+  transform: translateY(-25%);
+  margin-bottom: -15%;
+  width: 100%;
+}
+
+.pregnancy_container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 2rem;
+
+  .progressive img {
+    width: 65%;
+  }
+}
+
+.text_container2 {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+/* portrait part */
+
+#third_container {
+  width: 100%;
+  height: 100%;
+
+  h3 {
+    font-size: 4rem;
+  }
+  .progressive img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: 20% 15%;
+  }
+}
+
+#background_photo3 {
+  transform: translateY(-10%);
+  margin-bottom: -2%;
+  width: 100%;
+}
+
+.portrait_container {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+
+  .progressive img {
+    width: 20%;
+  }
+}
+
+.text_container3 {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
