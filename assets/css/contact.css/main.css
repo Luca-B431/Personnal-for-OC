@@ -1,0 +1,63 @@
+/* form container */
+
+.form_container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image {
+  background-image: url("https://ik.imagekit.io/Lu431/HQ/CharlottePau.jpg?updatedAt=1722202807827");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+/* form  only */
+
+.contact-form {
+  position: relative;
+  margin: 3rem;
+  font-family: "newyork";
+  background-color: #000000;
+  color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  width: 500px;
+  box-sizing: border-box;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  font-family: "felgine";
+  background-color: #a55b44;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+.contact-form button:hover {
+  background-color: #ded2b1;
+  color: #000000;
+  transform: scale(105%);
+}

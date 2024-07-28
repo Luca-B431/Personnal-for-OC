@@ -8,11 +8,16 @@ footer {
     width: 9vw;
     height: 9vw;
     align-self: center;
+    transition: all 0.4s;
+  }
+
+  img:hover {
+    transform: scale(110%);
   }
 }
 
 footer:hover {
-  border-top: 1px solid #000;
+  border-top: 1px solid var(--color-soft);
 }
 
 .ftr_icon_container {
