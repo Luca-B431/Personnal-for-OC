@@ -12,8 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
     updateBackgroundGradient();
   }
 
-  function updateBackgroundGradient() {}
-
   function showNextImage() {
     currentIndex = (currentIndex + 1) % imageCount;
     updateCarousel();
@@ -26,7 +24,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
   nextButton.addEventListener("click", showNextImage);
   prevButton.addEventListener("click", showPrevImage);
-
-  // Initial background gradient
-  updateBackgroundGradient();
 });
