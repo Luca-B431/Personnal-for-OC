@@ -17,7 +17,7 @@ footer {
 }
 
 footer:hover {
-  border-top: 1px solid var(--color-soft);
+  border-top: 1px solid black;
 }
 
 .ftr_icon_container {

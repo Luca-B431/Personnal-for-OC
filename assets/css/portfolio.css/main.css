@@ -3,41 +3,70 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* carrousel part  */
+
 .four-season_container {
   display: flex;
+  border-top: 2px solid rgb(0, 0, 0);
   padding: 2rem;
+  background-color: #ffffff;
 }
-
-/* carousel  */
 
 .four-season_carrousel {
   position: relative;
   width: 400px;
-  height: 100%;
   max-width: 600px;
   overflow: hidden;
-  border: 2px solid white;
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 10px;
 }
 
 .images {
   display: flex;
-  transition: transform 1s ease;
-  width: 100%;
-  height: 100%;
+  transition: transform 1s ease, filter 1s ease-in-out;
+}
+
+.images a {
+  flex: 0 0 100%;
+  display: block;
+  position: relative;
+  text-decoration: none;
 }
 
 .images img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  flex: 0 0 100%;
-  transition: filter 2s;
 }
 
-.images img:hover {
-  filter: blur(3px) grayscale(75%);
+/* show photo :hover  */
+
+.images a::after {
+  content: "Cliquez pour agrandir";
+  position: absolute;
+  text-align: center;
+  font-family: "Chiralla";
+  font-size: 200%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  padding: 100%;
+  border-radius: 5px;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.4);
+  transition: opacity 0.5s;
+  pointer-events: none;
+  z-index: 200;
 }
+
+/* show photo appear */
+
+.images a:hover::after {
+  opacity: 1;
+}
+
+/* carrousel arrows  */
 
 button {
   position: absolute;
@@ -59,4 +88,125 @@ button {
 .right {
   right: 10px;
   background: none;
+}
+
+/* carrousel part  */
+
+.sisters_container {
+  display: flex;
+  flex-direction: row-reverse;
+  border-top: 2px solid rgb(0, 0, 0);
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.sisters_carrousel {
+  position: relative;
+  width: 400px;
+  max-width: 600px;
+  overflow: hidden;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.sisters-images {
+  display: flex;
+  transition: transform 1s ease, filter 1s ease-in-out;
+}
+
+.sisters-images a {
+  flex: 0 0 100%;
+  display: block;
+  position: relative;
+  text-decoration: none;
+}
+
+.sisters-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* show photo :hover  */
+
+.sisters-images a::after {
+  content: "Cliquez pour agrandir";
+  position: absolute;
+  text-align: center;
+  font-family: "Chiralla";
+  font-size: 200%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  padding: 100%;
+  border-radius: 5px;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.4);
+  transition: opacity 0.5s;
+  pointer-events: none;
+  z-index: 200;
+}
+
+/* show photo appear */
+
+.sisters-images a:hover::after {
+  opacity: 1;
+}
+
+/* carrousel arrows  */
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.left2 {
+  left: 10px;
+  background: none;
+}
+
+.right2 {
+  right: 10px;
+  background: none;
+}
+
+.carousel_text_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  padding: 0rem 6rem;
+  font-size: 2rem;
+}
+
+.sisters_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+}
+
+.sisters_text_container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 0rem 4rem;
+  font-size: 2rem;
+
+  h2 {
+    display: flex;
+    gap: 1rem;
+
+    svg {
+      position: relative;
+      top: 3px;
+    }
+  }
 }
