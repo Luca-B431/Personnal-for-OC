@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateCarousel() {
     const offset = -currentIndex * 100;
     images.style.transform = `translateX(${offset}%)`;
-    updateBackgroundGradient();
   }
 
   function showNextImage() {
